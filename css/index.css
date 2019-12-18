@@ -37,7 +37,7 @@ nav{
 }
 
 .nav-links a{
-    color: rgb(226, 226, 226);
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -45,8 +45,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color: #333;
-    background-color: rgb(226, 226, 226);
+    color: #d0a448;
 }
 
 .burger{
@@ -167,29 +166,147 @@ div{
     background-size: cover;
 }
 
+.parallaxContent{
+    position: absolute;
+    z-index: 1000;
+    top: 300px;
+    left: 100px;
+    color: white;
+    margin-left: 40px;
+}
+
 @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
 }
 
-#content1{
+@media only screen and (max-device-width: 880px){
+    .parallaxContent{
+        display: none;
+    }
+}
+
+#content{
     width: 100%;
     margin-bottom: 5px;
 }
 
-#copyright{
-    width: 45%;
-    float: right;
+/*---------CONTENT1-----------*/
+
+h1{
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
 }
 
-#menu2{
+.par1{
+    font-size: 40px;
+}
+
+.par2{
+    font-size: 25px;
+}
+
+.arrow{
+    font-size: 50px;
+    color: white;
+    margin-left: 17rem;
+}
+
+.content1{
+    margin-top: 5rem;
+}
+
+.imgcontent1{
     float: left;
     width: 50%;
 }
 
-#forFooter{
-    width: 100%;
-    margin-bottom: 10px;
+.imgmargin1{
+    margin-left: 3rem;
 }
 
+.imgmargin{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.scriscontent1{
+    float: right;
+    width: 45%;
+    margin-right: 2rem;
+    margin-top: 15rem;
+}
+
+.reservation{
+    color: #d0a448;
+}
+.btncontent1{
+    background-color: #2e242c;
+    border: none;
+    color: #e7e7e7;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btncontent1:hover{
+    background-color: #d0a448;
+}
+
+.white{
+    background-color: white;
+    color: #333;
+    height: 60px;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.black{
+    background-color: #333;
+    color: white;
+    margin-bottom: 5px;
+    height: 350px;
+    padding: 3rem;
+    width: 100%;
+}
+
+.left{
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.center{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.a{
+    color: #333;
+    font-size: 30px;
+}
+
+.b{
+    color: #333;
+    font-size: 20px;
+}
+
+.c{
+    color: black;
+    font-size: 35px;
+}
+
+.d{
+    color: #d0a448;
+    font-size: 45px;
+}
+
+.chefpng{
+    float: right;
+    width: 250px;
+}

@@ -44,8 +44,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color: #333;
-    background-color: rgb(226, 226, 226);
+    color: #d0a448;
 }
 
 .burger{
@@ -128,4 +127,139 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -9px);
+}
+
+/*main content*/
+.main-content{
+    padding: 3rem;
+}
+
+.parallax{
+    background-image: url("../img/parallaxEvents.jpg");
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    text-align: center!important;
+    padding: 3rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted #d0a448;
+}
+
+.orange{
+    color: #d0a448;
+}
+
+.orangebtn{
+    border: 2px solid #d0a448;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.orangebtn:hover{
+    background-color: #d0a448;
+    color: white;
+}
+
+/*-----image gallery------*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+/*-----newsletter-------*/
+.input-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box i{
+    background: #d0a448;
+    width: 40px;
+    line-height: 40px;
+    color: white;
+    border: 1px solid black;
+}
+
+.tbox, .btn{
+   border: none;
+   outline: none; 
+}
+
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+    padding: 0!important;
+}
+
+.input-box:hover > .tbox, .tbox:focus{
+    width: 260px;
+    padding: 5px;
+}
+
+.btn{
+    background: #d0a448;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*-------form--------*/
+
+.inputs{
+    color: #d0a448;
+    text-transform: uppercase;
+}
+
+input{
+    padding: 5px 20px;
+}
+
+.form-item{
+    text-align: center;
+}
+
+form{
+    border: 2px solid #d0a448;
+    padding: 10px;
 }

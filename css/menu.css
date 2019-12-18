@@ -44,8 +44,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color: #333;
-    background-color: rgb(226, 226, 226);
+    color: #d0a448;
 }
 
 .burger{
@@ -128,4 +127,43 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -9px);
+}
+
+/*-----parallax------*/
+.parallax{
+    background-image: url("../img/parallaxMenu.jpg");
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*main content*/
+.main-content{
+    padding: 3rem;
+}
+
+/*-----card------*/
+
+.card{
+    text-align: center!important;
+    padding: 3rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted #d0a448;
+}
+
+.orange{
+    color: #d0a448;
+}
+
+.menuimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }

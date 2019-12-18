@@ -44,8 +44,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color: #333;
-    background-color: rgb(226, 226, 226);
+    color: #d0a448;
 }
 
 .burger{
@@ -128,4 +127,68 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -9px);
+}
+
+
+/*----------MAIN----------*/
+.main-content{
+    padding: 3rem;
+}
+
+.card{
+    text-align: center;
+    padding: 3rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted #d0a448;
+}
+
+.parallax{
+    background-image: url("../img/parallaxAbout.jpg");
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+.orange{
+    color: #d0a448;
+}
+
+/*-----IMAGES ROW-----*/
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 1100px){
+    .column{
+        width: 100%;
+    }
+}
+
+/*----p------*/
+
+.bold{
+    font-weight: 600;
 }

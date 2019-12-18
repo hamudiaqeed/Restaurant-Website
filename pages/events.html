@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="icon" href="img/b.jpg">
+        <title>Events - Bite</title>
+        <link rel="icon" href="../img/joseph-restaurant-logo-50-black.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/95ef876d75.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/events.css">
@@ -30,6 +30,111 @@
                 <div class="line3"></div>
             </div>
         </nav>
+
+        <div class="parallax"></div>
+
+        <div class="main-content">
+            <div class="card">
+                <p class="orange">PLANNING IMPORTANT EVENTS?</p><br>
+                <h2>Rent the place</h2><br>
+                <p>
+                    Joseph by Joseph Hadad offers 3 various spaces for private or corporate events. Decorated in a very elegant style, with art deco touches, the main area
+                    can accommodate up to 50 persons.
+                </p><br>
+                <p>
+                    Reaching the first floor, you can choose a very intimate and chic attic, which can accommodate up to 35 guests, having direct access to the bar
+                    and a professional projector. During spring and summer season, you can also choose to hist an event on our terrace, which has the looks and feel of a
+                    green oasis having a total capacity of 60 persons.
+                </p><br>
+                <button class="orange orangebtn">RENT THE PLACE</button><br><br>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" class="tbox" name="email" id="email" placeholder="Enter your email" data-required="1">
+                    <a href="#" class="btn" id="trimitere">Subscribe</a>
+                </div>
+            </div><br>
+
+
+            <div class="row">
+                <div class="column">
+                  <img src="../img/grid images/1.jpg">
+                  <img src="../img/grid images/2.jpg">
+                  <img src="../img/grid images/3.jpg">
+                </div>
+                <div class="column">
+                  <img src="../img/grid images/4.jpg">
+                  <img src="../img/grid images/5.jpg">
+                  <img src="../img/grid images/6.jpg">
+                  <img src="../img/grid images/7.jpg">
+                </div>
+                <div class="column">
+                  <img src="../img/grid images/9.jpg">
+                  <img src="../img/grid images/10.jpg">
+                  <img src="../img/grid images/11.jpg">
+                  <img src="../img/grid images/12.jpg">
+                </div>
+                <div class="column">
+                  <img src="../img/grid images/13.jpg">
+                  <img src="../img/grid images/14.jpg">
+                  <img src="../img/grid images/15.jpg">
+                </div>
+            </div><br>
+
+            <div class="card">
+                <p class="orange">WANT TO RENT THE PLACE?</p><br>
+                <h2>Reservation Form</h2><br>
+                <p>
+                    Please complete the form bellow to reserve the place for your special events. Please note we will need to confirm your reservation, 
+                    either by e-mail or phone. One of our representatives will contact your shortly.
+                </p>
+            </div><br>
+
+            <form action="procesare.php" id="registration">
+
+                <div class="form-item">
+                    <span class="inputs">Your name (required)</span><br>
+                    <input type="text" name="name" id="name" placeholder="First Name" required>
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">Company (optional)</span><br>
+                    <input type="text" name="company" id="company" placeholder="Company">
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">E-mail (required)</span><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">Telephone (required)</span><br>
+                    <input type="tel" name="tel" id="tel" placeholder="Telephone" required>
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">How many people? (required)</span><br>
+                    <input type="text" name="people" id="people" placeholder="Example: 40" required>
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">At what date?</span><br>
+                    <input type="date" name="date" id="date">
+                </div><br>
+
+                <div class="form-item">
+                    <span class="inputs">Details</span><br>
+                    <textarea rows="4" cols="40" placeholder="Some details about your event"></textarea>
+                </div><br>
+
+                <div class="form-item">
+                    <button type="submit" class="orange orangebtn">SEND REQUEST</button>
+                </div>
+                
+            </form>
+
+        </div>
+
+        
 
         <script src="../script.js"></script>
     </body>
