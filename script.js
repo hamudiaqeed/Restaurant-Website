@@ -19,6 +19,8 @@ const navSlide = () => {
 
 navSlide();
 
+
+//ONLY FOR THE FIRST PAGE
 function smoothScroll(target, duration){
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
@@ -49,3 +51,6 @@ var section1 = document.querySelector('.section1');
 section1.addEventListener('click', function() {
     smoothScroll('.section2', 1000);
 });
+//---------------------------------------------
+
+
