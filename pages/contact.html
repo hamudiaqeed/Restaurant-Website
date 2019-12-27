@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/95ef876d75.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/contact.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=MY_API_KEY"></script>
     </head>
     <body>
         
@@ -31,8 +32,84 @@
             </div>
         </nav>
 
+        <div class="parallax"></div>
+
         <div id="main">
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+            <div id="cards">
+                <div class="cardContent" id="card1">
+                    <img src="../img/forContacts/Lcd.svg">
+                    <h2>LOCATION</h2>
+                    <p>
+                        Smârdan 30, 2nd floor<br>
+                        Bucharest<br>
+                        0735.44.80.80
+                    </p>
+                </div>
+                
+                <div class="cardContent" id="card2">
+                    <img src="../img/forContacts/lCd (1).svg">
+                    <h2>OPENING</h2>
+                    <p>
+                        Sunday - Thursday: 4 pm - 2 am<br>
+                        Friday - Saturday: 4 pm - 6 am<br>
+                        la cuisine de Tatian: 4 pm - 12 am
+                    </p>
+                </div>
+
+                <div class="cardContent" id="card3">
+                    <img src="../img/forContacts/lcD (2).svg">
+                    <h2>SETUP YOUR EVENT</h2>
+                    <p>
+                        Pick a day and organise<br>
+                        your event<br>
+                        Reach us for more info
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="map">
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <img src="../img/joseph-restaurant-logo-50-black.png" alt="logo">
+                </div>
+
+                <div class="footer_third">
+                    <h1>More</h1>
+                    <a href="../pages/about.html">About</a>
+                    <a href="../pages/menu.html">Menu</a>
+                    <a href="../pages/contact.html">Contact</a>
+                </div>
+
+                <div class="footer_third">
+                    <h1>Join Us On</h1>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+                    <span>
+                        © Restaurant Example<br>
+                        Bucharest, Romania<br>
+                        Str. Prof. Dr. Ion Cantacuzino<br>
+                        0733333333<br>
+                        info@restaurant.com
+                    </span>
+                </div>
+
+                <div class="footer_third">
+                    <h1>Need Help?</h1>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
         </div>
 
         <script src="../script.js"></script>
