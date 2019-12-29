@@ -5,8 +5,13 @@
 }
 
 html, body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     height: 100%;
+}
+
+:root{
+    --main-color: #333;
+    --orange-color: #d0a448;
 }
 
 /*---------------MENU-----------------*/
@@ -16,7 +21,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #333;
+    background-color: var(--main-color);
 }
 
 .logo{
@@ -26,8 +31,12 @@ nav{
     font-size: 20px;
 }
 
+h4{
+    color: white;
+}
+
 .home{
-    color: #d0a448!important;
+    color: var(--orange-color)!important;
 }
 
 .nav-links{
@@ -49,7 +58,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color: #d0a448;
+    color: var(--orange-color);
 }
 
 .burger{
@@ -93,7 +102,7 @@ nav{
         right: 0;
         height: 92vh;
         top: 8vh;
-        background-color: #333;
+        background-color: var(--main-color);
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -177,8 +186,33 @@ div{
     left: 100px;
     color: white;
     margin-left: 40px;
-    background-color: #333;
+    background-color: var(--main-color);
     opacity: 0.8;
+}
+
+@media only screen and (max-device-width: 1515px){
+    .content1{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .imgcontent1{
+        width: 100%!important;
+        float: left;
+        height: auto;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+
+    .scriscontent1{
+        width: 100%;
+        float: left!important;
+        text-align: center;
+        margin: 0!important;
+        align-self: center;
+    }
+
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -191,7 +225,31 @@ div{
     .parallaxContent{
         display: none;
     }
+
+    #parallax{
+        height: 400px;
+    }
 }
+
+@media only screen and (max-device-width: 600px){
+    .chefpng{
+        display: none!important;
+    }
+
+    .black{
+        text-align: center;
+        height: 100%;
+    }
+
+    .left{
+        width: 100%!important;
+    }
+
+    .imgcontent1{
+        display: none;
+    }
+}
+
 
 #content{
     width: 100%;
@@ -202,7 +260,7 @@ div{
 
 h1{
     font-size: 70px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .par1{
@@ -221,6 +279,7 @@ h1{
 
 .content1{
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .imgcontent1{
@@ -242,10 +301,11 @@ h1{
     width: 45%;
     margin-right: 2rem;
     margin-top: 15rem;
+    height: 100%;
 }
 
 .reservation{
-    color: #d0a448;
+    color: var(--orange-color);
 }
 .btncontent1{
     background-color: #2e242c;
@@ -260,19 +320,19 @@ h1{
 }
 
 .btncontent1:hover{
-    background-color: #d0a448;
+    background-color: var(--orange-color);
 }
 
 .white{
     background-color: white;
-    color: #333;
-    height: 60px;
+    color: var(--main-color);
+    height: auto;
     padding: 5px 20px;
     width: 100%;
 }
 
 .black{
-    background-color: #333;
+    background-color: var(--main-color);
     color: white;
     margin-bottom: 5px;
     height: 350px;
@@ -293,12 +353,12 @@ h1{
 }
 
 .a{
-    color: #333;
+    color: var(--main-color);
     font-size: 30px;
 }
 
 .b{
-    color: #333;
+    color: var(--main-color);
     font-size: 20px;
 }
 
@@ -308,7 +368,7 @@ h1{
 }
 
 .d{
-    color: #d0a448;
+    color: var(--orange-color);
     font-size: 45px;
 }
 
@@ -325,7 +385,7 @@ h1{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #d0a448;
+    background-color: var(--orange-color);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -337,7 +397,7 @@ h1{
     background-color: #555;
 }
 
-
+/*---------FOOTER-----------*/
 
 .footer{
     margin-top: 90px;
@@ -346,7 +406,7 @@ h1{
     overflow: hidden;
     padding: 70px 0;
     box-sizing: border-box;
-    background-color: #333;
+    background-color: var(--main-color);
 }
 
 .inner_footer{
@@ -416,9 +476,10 @@ h1{
     padding-top: 20px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 1024px){
     .footer .inner_footer{
         width: 90%;
+        text-align: center;
     }
 
     .inner_footer .logo_container,
